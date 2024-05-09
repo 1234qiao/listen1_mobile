@@ -1,5 +1,10 @@
 name: react-native-android-build-apk
-on: workflow_dispatch
+on:
+  label:
+    types:
+      - created
+      - edited
+      - deleted 
   push:
     branches:
       - master
